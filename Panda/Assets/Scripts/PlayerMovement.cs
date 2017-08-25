@@ -15,9 +15,11 @@ public class PlayerMovement : MonoBehaviour {
     float currentSpeed;
 
     Animator animator;
+    Transform cameraT;
     
 	void Start () {
         animator = GetComponent<Animator>();
+        cameraT = Camera.main.transform;
     }
 	
 	void FixedUpdate ()
@@ -29,7 +31,7 @@ public class PlayerMovement : MonoBehaviour {
 
         if (inputDir != Vector2.zero)
         {
-            float targetRotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg;
+            float targetRotation = Mathf.Atan2(inputDir.x, inputDir.y) * Mathf.Rad2Deg + cameraT.eulerAngles.y;
             transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref turnSmoothVelocity, turnSpeedTime);
         }
 

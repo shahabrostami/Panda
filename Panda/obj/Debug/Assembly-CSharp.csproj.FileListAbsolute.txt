@@ -30,3 +30,35 @@ C:\Users\Personal Rostami\Documents\Unity\Panda\Panda\Panda\Temp\bin\Debug\Unity
 C:\Users\Personal Rostami\Documents\Unity\Panda\Panda\Panda\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Personal Rostami\Documents\Unity\Panda\Panda\Panda\obj\Debug\Assembly-CSharp.dll
 C:\Users\Personal Rostami\Documents\Unity\Panda\Panda\Panda\obj\Debug\Assembly-CSharp.pdb
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\nunit.framework.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEditor.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEditor.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\nunit.framework.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\rostami\Documents\Panda\Panda\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\rostami\Documents\Panda\Panda\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\rostami\Documents\Panda\Panda\obj\Debug\Assembly-CSharp.dll
+C:\Users\rostami\Documents\Panda\Panda\obj\Debug\Assembly-CSharp.pdb
