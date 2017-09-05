@@ -21,11 +21,18 @@ public class PlayerMovement : MonoBehaviour {
     Animator animator;
     Transform cameraT;
     CharacterController controller;
-    
-	void Start () {
+
+    private Vector3 hitNormal;
+    private bool isGrounded;
+    private float slopeLimit;
+    private float collisionAngle;
+
+    void Start () {
         animator = GetComponent<Animator>();
         cameraT = Camera.main.transform;
         controller = GetComponent<CharacterController>();
+        isGrounded = true;
+        slopeLimit = controller.slopeLimit;
     }
 	
 	void FixedUpdate ()
@@ -49,7 +56,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void DoJump()
     {
-        if(controller.isGrounded)
+        if(controller.isGrounded && collisionAngle < 45)
         {
             float jumpVelociy = Mathf.Sqrt(-2 * gravity * jumpHeight);
             velocityY = jumpVelociy;
@@ -85,12 +92,28 @@ public class PlayerMovement : MonoBehaviour {
         velocityY += Time.deltaTime * gravity;
         Vector3 velocity = transform.forward * currentSpeed + Vector3.up * velocityY;
 
+        Vector2 slopeSpeed = new Vector2();
+        if (!isGrounded)
+        {
+            slopeSpeed.x = (1f - hitNormal.y) * hitNormal.x * (1f - 0.1f);
+            slopeSpeed.y = (1f - hitNormal.y) * hitNormal.z * (1f - 0.1f);
+            velocity.x = slopeSpeed.x;
+            velocity.z = slopeSpeed.y;
+        }
+
         controller.Move(velocity * Time.deltaTime);
 
         currentSpeed = new Vector2(controller.velocity.x, controller.velocity.z).magnitude;
 
-
         if (controller.isGrounded)
             velocityY = 0;
+
+        collisionAngle = Vector3.Angle(Vector3.up, hitNormal);
+        isGrounded = (collisionAngle) <= 45f;
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        hitNormal = hit.normal;
     }
 }
