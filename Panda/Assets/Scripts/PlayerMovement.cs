@@ -91,14 +91,11 @@ public class PlayerMovement : MonoBehaviour {
 
         velocityY += Time.deltaTime * gravity;
         Vector3 velocity = transform.forward * currentSpeed + Vector3.up * velocityY;
-
-        Vector2 slopeSpeed = new Vector2();
-        if (!isGrounded)
+        
+        if (!isGrounded && inputDir == Vector2.zero)
         {
-            slopeSpeed.x = (1f - hitNormal.y) * hitNormal.x * (1f - 0.1f);
-            slopeSpeed.y = (1f - hitNormal.y) * hitNormal.z * (1f - 0.1f);
-            velocity.x = slopeSpeed.x;
-            velocity.z = slopeSpeed.y;
+            velocity.x = (1f - hitNormal.y) * hitNormal.x * (1f - 0.1f);
+            velocity.z = (1f - hitNormal.y) * hitNormal.z * (1f - 0.1f);
         }
 
         controller.Move(velocity * Time.deltaTime);
@@ -115,5 +112,13 @@ public class PlayerMovement : MonoBehaviour {
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         hitNormal = hit.normal;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("BarrelPickUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 }
